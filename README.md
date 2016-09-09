@@ -1,0 +1,1 @@
+# puppet-elasticsearch_backup
