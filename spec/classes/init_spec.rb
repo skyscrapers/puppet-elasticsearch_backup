@@ -54,7 +54,7 @@ describe 'elasticsearch_backup' do
         'ensure' => 'file',
         'owner'  => 'root',
         'group'  => 'root',
-        'mode'   => '0775',
+        'mode'   => '0755',
 		)
     end
     it do
@@ -92,7 +92,7 @@ describe 'elasticsearch_backup' do
         'ensure' => 'file',
         'owner'  => 'root',
         'group'  => 'root',
-        'mode'   => '0775',
+        'mode'   => '0755',
 		)
     end
     it do
@@ -108,7 +108,7 @@ describe 'elasticsearch_backup' do
         'ensure' => 'directory',
         'owner'  => 'elasticsearch',
         'group'  => 'elasticsearch',
-        'mode'   => '0775',
+        'mode'   => '0755',
 		)
   	end
   end
