@@ -82,7 +82,6 @@ class elasticsearch_backup(
     unless    => "curl -XGET \'http://localhost:9200/_snapshot/_all\' | grep ${snapshot_name}",
     path      => '/usr/bin/:/bin/',
     logoutput => true,
-    require   => Class['Elasticsearch'],
   }
 
   file { "${script_path}/elasticsearch_backup.py":
@@ -109,7 +108,6 @@ class elasticsearch_backup(
       group   => 'root',
       mode    => '0644',
       content => template('elasticsearch_backup/etc/cron.d/elasticsearch.erb'),
-      require => Class['Elasticsearch'],
     }
   }
 }
