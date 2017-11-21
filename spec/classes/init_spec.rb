@@ -6,7 +6,6 @@ describe 'elasticsearch_backup' do
       {
         :osfamily                  => 'Ubuntu',
         :operatingsystem           => 'Ubuntu'
-        :hostname                  => 'ci.skyscrape.rs'
       }
   end
 
@@ -15,7 +14,7 @@ describe 'elasticsearch_backup' do
       {
         :type             => 's3',
         :bucket           => 'fancy-s3-bucket-name',
-        :base_path        => $::hostname,
+        :base_path        => 'ci.skyscrape.rs',
         :region           => 'eu-west-1',
         :location         => '/tmp/backups',
         :script_path      => '/usr/local/bin',
@@ -38,7 +37,7 @@ describe 'elasticsearch_backup' do
       {
         :type             => 's3',
         :bucket           => 'fancy-s3-bucket-name',
-        :base_path        => $::hostname,
+        :base_path        => 'ci.skyscrape.rs',
         :region           => 'eu-west-1',
         :location         => '/tmp/backups',
         :script_path      => '/usr/local/bin',
@@ -76,7 +75,7 @@ describe 'elasticsearch_backup' do
       {
         :type             => 'fs',
         :bucket           => 'fancy-s3-bucket-name',
-        :base_path        => $::hostname,
+        :base_path        => 'ci.skyscrape.rs',
         :region           => 'eu-west-1',
         :location         => '/tmp/backups',
         :script_path      => '/usr/local/bin',

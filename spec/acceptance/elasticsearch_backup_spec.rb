@@ -7,7 +7,7 @@ describe '::elasticsearch_backup' do
         class { 'elasticsearch_backup':
           type             => 's3',
           bucket           => 'fancy-s3-bucket-name',
-          base_path        => $::hostname,
+          base_path        => 'ci.skyscrape.rs',
           region           => 'eu-west-1',
           script_path      => '/usr/local/bin',
           snapshot_name    => 'backup',
