@@ -89,7 +89,7 @@ class elasticsearch_backup(
       ensure => file,
       owner  => 'root',
       group  => 'root',
-      mode   => '0775',
+      mode   => '0755',
       source => 'puppet:///modules/elasticsearch_backup/elasticsearch_backup.py',
   }
 
