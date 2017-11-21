@@ -14,15 +14,15 @@ describe 'elasticsearch_backup' do
       {
         :type             => 's3',
         :bucket           => 'fancy-s3-bucket-name',
-        :base_path        => $::hostname,
+        :base_path        => 'ci.skyscrape.rs',
         :region           => 'eu-west-1',
         :location         => '/tmp/backups'        
         :script_path      => '/usr/local/bin',
         :snapshot_name    => 'backup',
-        :snapshot_age     => 14,
-        :cronjob          => true,
-        :cron_starthour   => 6,
-        :cron_startminute => 22,
+        :snapshot_age     => '14',
+        :cronjob          => 'true',
+        :cron_starthour   => '6',
+        :cron_startminute => '22',
       }
     end
 
@@ -37,15 +37,15 @@ describe 'elasticsearch_backup' do
       {
         :type             => 's3',
         :bucket           => 'fancy-s3-bucket-name',
-        :base_path        => $::hostname,
+        :base_path        => 'ci.skyscrape.rs',
         :region           => 'eu-west-1',
         :location         => '/tmp/backups'
         :script_path      => '/usr/local/bin',
         :snapshot_name    => 'backup',
-        :snapshot_age     => 14,
-        :cronjob          => true,
-        :cron_starthour   => 6,
-        :cron_startminute => 22,
+        :snapshot_age     => '14',
+        :cronjob          => 'true',
+        :cron_starthour   => '6',
+        :cron_startminute => '22',
       }
     end
 
