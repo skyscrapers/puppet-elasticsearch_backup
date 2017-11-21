@@ -89,7 +89,7 @@ class elasticsearch_backup(
       owner  => 'root',
       group  => 'root',
       mode   => '0775',
-      source => 'puppet:///modules/elasticsearch/elasticsearch_backup.py',
+      source => 'puppet:///modules/elasticsearch_backup/elasticsearch_backup.py',
   }
 
   if ( $type == 'fs' ) {
@@ -107,7 +107,7 @@ class elasticsearch_backup(
       owner   => 'root',
       group   => 'root',
       mode    => '0644',
-      content => template('elasticsearch/etc/cron.d/elasticsearch.erb'),
+      content => template('elasticsearch_backup/etc/cron.d/elasticsearch.erb'),
     }
   }
 }

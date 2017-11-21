@@ -16,7 +16,7 @@ describe 'elasticsearch_backup' do
         :bucket           => 'fancy-s3-bucket-name',
         :base_path        => 'ci.skyscrape.rs',
         :region           => 'eu-west-1',
-        :location         => '/tmp/backups'        
+        :location         => '/tmp/backups',
         :script_path      => '/usr/local/bin',
         :snapshot_name    => 'backup',
         :snapshot_age     => '14',
@@ -39,7 +39,7 @@ describe 'elasticsearch_backup' do
         :bucket           => 'fancy-s3-bucket-name',
         :base_path        => 'ci.skyscrape.rs',
         :region           => 'eu-west-1',
-        :location         => '/tmp/backups'
+        :location         => '/tmp/backups',
         :script_path      => '/usr/local/bin',
         :snapshot_name    => 'backup',
         :snapshot_age     => '14',
@@ -77,7 +77,7 @@ describe 'elasticsearch_backup' do
         :bucket           => 'fancy-s3-bucket-name',
         :base_path        => $::hostname,
         :region           => 'eu-west-1',
-        :location         => '/tmp/backups'
+        :location         => '/tmp/backups',
         :script_path      => '/usr/local/bin',
         :snapshot_name    => 'backup',
         :snapshot_age     => 14,
