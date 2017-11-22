@@ -1,0 +1,42 @@
+{
+    "name"        : "puppet-elasticsearch_backup",
+    "version"     : "1.0.0",
+    "author"      : "Skyscrapers",
+    "summary"     : "Puppet Elasticsearch backup module",
+    "license"     : "Apache-2.0",
+    "source"      : "https://github.com/skyscrapers/puppet-elasticsearch_backup",
+    "project_page": "https://github.com/skyscrapers/puppet-elasticsearch_backup",
+    "issues_url"  : "https://github.com/skyscrapers/puppet-elasticsearch_backup/issues",
+    "dependencies": [
+        { "name": "puppetlabs/stdlib", "version_requirement": ">= 3.2.0 < 5.0.0" }
+    ],
+    "requirements": [{
+        "name"               : "puppet",
+        "version_requirement": "4.x"
+    }],
+    "operatingsystem_support": [{
+            "operatingsystem"       : "Ubuntu",
+            "operatingsystemrelease": [
+                "14.04",
+                "16.04"
+            ]
+        },
+        {
+            "operatingsystem"       : "RedHat",
+            "operatingsystemrelease": [
+                "7"
+            ]
+        }
+    ],
+    "puppet_version": [
+        "4.0",
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8"
+    ]
+}
