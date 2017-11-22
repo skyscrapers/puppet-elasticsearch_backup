@@ -17,18 +17,18 @@ matrix:
   include:
   - rvm: 2.3.3
     env: PUPPET_GEM_VERSION="~> 4.5" STRICT_VARIABLES="yes" CHECK=test
-  - rvm: default
-    sudo: required
-    dist: trusty
-    services: docker
-    env: BEAKER_set="ubuntu-14.04-docker"
-    script: sudo service docker restart ; sleep 10 && bundle exec rspec spec/acceptance
-  - rvm: default
-    sudo: required
-    dist: trusty
-    services: docker
-    env: BEAKER_set="centos-7-docker"
-    script: sudo service docker restart ; sleep 10 && bundle exec rspec spec/acceptance
+  # - rvm: default
+  #   sudo: required
+  #   dist: trusty
+  #   services: docker
+  #   env: BEAKER_set="ubuntu-14.04-docker"
+  #   script: sudo service docker restart ; sleep 10 && bundle exec rspec spec/acceptance
+  # - rvm: default
+  #   sudo: required
+  #   dist: trusty
+  #   services: docker
+  #   env: BEAKER_set="centos-7-docker"
+  #   script: sudo service docker restart ; sleep 10 && bundle exec rspec spec/acceptance
 branches:
   only:
   - master
