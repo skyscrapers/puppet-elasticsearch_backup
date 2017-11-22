@@ -85,11 +85,11 @@ class elasticsearch_backup(
   }
 
   file { "${script_path}/elasticsearch_backup.py":
-      ensure => file,
-      owner  => 'root',
-      group  => 'root',
-      mode   => '0755',
-      source => 'puppet:///modules/elasticsearch_backup/elasticsearch_backup.py',
+    ensure => file,
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0755',
+    source => 'puppet:///modules/elasticsearch_backup/elasticsearch_backup.py',
   }
 
   if ( $type == 'fs' ) {

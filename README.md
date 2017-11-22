@@ -37,8 +37,7 @@ This module sets up [Elasticsearch](https://www.elastic.co/overview/elasticsearc
 
 #### Hiera
 
-```
-yaml
+```yaml
 ---
   elasticsearch_backup::type: 's3'
   elasticsearch_backup::bucket: 'fancy-s3-bucket-name'

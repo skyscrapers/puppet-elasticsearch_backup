@@ -26,10 +26,10 @@ PuppetLint.configuration.ignore_paths = exclude_paths
 
 PuppetSyntax.exclude_paths = exclude_paths
 
-desc "Run acceptance tests"
-RSpec::Core::RakeTask.new(:acceptance) do |t|
-  t.pattern = 'spec/acceptance'
-end
+# desc "Run acceptance tests"
+# RSpec::Core::RakeTask.new(:acceptance) do |t|
+#   t.pattern = 'spec/acceptance'
+# end
 
 # use librarian-puppet to manage fixtures instead of .fixtures.yml
 # offers more possibilities like explicit version management, forge downloads,...
